@@ -14,7 +14,6 @@ import {
 import { ButtonComponent } from './button/button.component';
 import { MenuComponent } from './menu/menu.component';
 import { CardComponent } from './card/card.component';
-import { PaginatorComponent } from './paginator/paginator.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import {NgxPaginationModule } from 'ngx-pagination';
@@ -25,7 +24,6 @@ import {NgxPaginationModule } from 'ngx-pagination';
     ButtonComponent,
     MenuComponent,
     CardComponent,
-    PaginatorComponent,
     AboutComponent,
     HomeComponent
   ],
