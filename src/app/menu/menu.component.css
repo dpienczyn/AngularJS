@@ -1,0 +1,15 @@
+.menu{
+   left: 50%;
+   text-align: center;
+}
+button{
+	font-family: Times, Times New Roman, serif;
+	text-transform: uppercase;
+	
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.active, .btn:hover {
+  background-color: #E3F2FD;
+  color: white;
+}

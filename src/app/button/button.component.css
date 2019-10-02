@@ -1,0 +1,6 @@
+.example-button-row button,
+.example-button-row a { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,19 @@
+<div class="menu">
+<button class="btn btn-active" mat-button routerLink="/home" routerLinkActive="active">Home</button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="belowMenu">Below</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="beforeMenu">Before</button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+
+<button mat-button routerLink="/about" routerLinkActive="active" >About Me</button>
