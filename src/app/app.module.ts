@@ -9,7 +9,6 @@ import {MatMenuModule} from '@angular/material/menu';
 import { 
   MatButtonModule, MatIconModule
  } from '@angular/material';
- import {MatPaginatorModule} from '@angular/material/paginator';
  import {MatCardModule} from '@angular/material/card';
 import { ButtonComponent } from './button/button.component';
 import { MenuComponent } from './menu/menu.component';
@@ -35,7 +34,6 @@ import {NgxPaginationModule } from 'ngx-pagination';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatPaginatorModule,
     FormsModule,
     AppRoutingModule,
     HttpModule,
