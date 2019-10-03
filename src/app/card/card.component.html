@@ -1,4 +1,4 @@
-<mat-card class="example-card" *ngFor="let hero of heroes | paginate: {itemsPerPage: 6, currentPage: p}">
+<mat-card class="example-card" *ngFor="let hero of heroes | paginate: config">
   <mat-card-header class="sm-md-6">
     <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title>{{hero.name}}</mat-card-title>
@@ -17,8 +17,8 @@
 </mat-card>
 <div class="container">
   <div class="row justify-content-around">
-<div class="col-md-12">
-<pagination-controls (pageChange)="p =$event"></pagination-controls>
-</div>
-</div>
+    <div class="col-md-12">
+      <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+    </div>
+  </div>
 </div>

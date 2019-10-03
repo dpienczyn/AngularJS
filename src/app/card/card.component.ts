@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { Hero } from '../hero';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { Hero } from '../hero/hero';
 import { MatPaginator } from '@angular/material';
 @Component({
   selector: 'app-card',
@@ -7,6 +7,7 @@ import { MatPaginator } from '@angular/material';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
+  config: any;
   @ViewChild(MatPaginator) paginator: MatPaginator;
  
 	heroes = [
@@ -21,12 +22,21 @@ export class CardComponent implements OnInit {
 ];
 myHero = this.heroes[0];
 
-
   constructor() {
   
-   }
+  this.config = {
+      itemsPerPage: 6,
+      currentPage: 1,
+      totalItems: this.heroes.count
+    };
+  }
+
+  pageChanged(event){
+    this.config.currentPage = event;
+  }
 
   ngOnInit() {
   }
+
 
 }
